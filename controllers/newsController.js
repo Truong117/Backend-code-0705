@@ -5,10 +5,6 @@ const multer = require('multer');
 const path = require('path');
 
 
-
-
-const serverUrl = process.env.SERVER_URL|| 'http://localhost:3000';
-
 const addNews = async (req, res) => {
     const images = [];
     if (!req.files.length) {
